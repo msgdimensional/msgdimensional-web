@@ -7,10 +7,12 @@ GITPUSH
 
 powershell
 
+HACERLO SIEMPRE DESDE F:
+
 cd F:\MSG\MARKETING\WEB\msgdimensional-web
 
 git status
-git add
+git add index.html   (reemplazar el html que cambio). 
 git commit -m "none"
 
 git push origin main
