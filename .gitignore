@@ -1,0 +1,10 @@
+﻿# Local media folder - never sync to GitHub
+media/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
