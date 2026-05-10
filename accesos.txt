@@ -1,0 +1,23 @@
+MSG DIMENSIONAL - LANDING PAGE
+ssh root@178.156.198.226
+Nexmetria2026$
+
+════════════════════════════════════════════════════════════════
+GITPUSH
+
+powershell
+
+cd F:\MSG\MARKETING\WEB\msgdimensional-web
+
+git status
+
+git push origin main
+
+---------------------------------------------------------------
+
+DEPLOY 
+ssh root@178.156.198.226
+
+cd /opt/nexmetria/msg/
+
+git pull origin main
