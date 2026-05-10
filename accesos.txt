@@ -10,6 +10,8 @@ powershell
 cd F:\MSG\MARKETING\WEB\msgdimensional-web
 
 git status
+git add
+git commit -m "none"
 
 git push origin main
 
