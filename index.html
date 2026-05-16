@@ -28,12 +28,46 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="demos/startup/startup.css" />
+        <!-- MSG: forzar header transparente y logo blanco siempre -->
+        <style>
+            /* Mantener el header transparente incluso con la clase header-appear (al hacer scroll) */
+            header .navbar.header-appear,
+            header.header-appear .navbar,
+            .navbar.header-appear {
+                background-color: transparent !important;
+                box-shadow: none !important;
+                border-bottom-color: transparent !important;
+            }
+            /* Forzar que SIEMPRE se muestre el default-logo (blanco) y nunca el alt-logo */
+            header .navbar .default-logo,
+            header.header-appear .navbar .default-logo,
+            .navbar.header-appear .default-logo {
+                display: inline-block !important;
+                opacity: 1 !important;
+                visibility: visible !important;
+            }
+            header .navbar .alt-logo,
+            header.header-appear .navbar .alt-logo,
+            .navbar.header-appear .alt-logo {
+                display: none !important;
+            }
+            /* Mantener los enlaces del nav en blanco al hacer scroll */
+            header.header-appear .navbar-nav .nav-link,
+            .navbar.header-appear .navbar-nav .nav-link {
+                color: #ffffff !important;
+            }
+            /* Mantener el toggler del nav y el icono de búsqueda en blanco */
+            header.header-appear .navbar-toggler-line,
+            .navbar.header-appear .navbar-toggler-line {
+                background-color: #ffffff !important;
+            }
+        </style>
     </head>
     <body data-mobile-nav-style="classic">
         <!-- start header -->
         <header> 
             <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg header-transparent bg-transparent border-bottom border-color-transparent-white-light disable-fixed">
+            <nav class="navbar navbar-expand-lg header-transparent bg-transparent border-bottom border-color-transparent-white-light">
                 <div class="container-fluid">
                     <div class="col-auto col-lg-2 me-lg-0 me-auto">
                         <a class="navbar-brand" href="index.html">
@@ -377,15 +411,7 @@
         <!-- end section -->  
         <!-- start section -->
         <section class="pt-0 background-position-center-top sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
-            <div class="container d-none d-md-block mb-60px">
-                <div class="row">
-                    <div class="col-12 p-0">
-                        <div class="border-radius-6px overflow-hidden" style="max-height: 350px;">
-                            <img src="images/service-analysis-validation.png" class="w-100" style="object-fit: cover; object-position: center; height: 350px; width: 100%;" alt="MSG Dimensional - Análisis y Validación">
-                        </div>
-                    </div>
-                </div> 
-            </div>
+
             <div class="container">  
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -479,7 +505,7 @@
                     <div class="col-lg-6 text-center md-mb-50px"> 
                         <figure class="position-relative m-0">
                             <div class="position-relative d-inline-block"  data-anime='{ "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                                <img class="w-90 border-radius-5px animation-float" src="images/service-analysis-validation.png" alt="" />
+                                <img class="w-90 border-radius-5px animation-float" src="images/banner-methodology-msg-dimensional.png" alt="MSG Dimensional - Metodología de trabajo" />
                             </div>
                             <figcaption class="position-absolute bg-white box-shadow-quadruple-large border-radius-5px bottom-50px xs-bottom-35px left-minus-30px md-left-minus-0px ps-50px pe-50px pt-35px pb-35px xs-p-20px w-320px xs-w-250px text-center last-paragraph-no-margin" data-anime='{ "translateY": [50, 0], "scale": [0.8,1], "opacity": [0,1], "duration": 800, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
                                 <div class="icon-with-text-style-06">
