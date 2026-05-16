@@ -319,25 +319,30 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 md-mb-50px" data-anime='{ "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="d-flex flex-column box-shadow-quadruple-large border-radius-8px overflow-hidden" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                        <div class="d-flex flex-column box-shadow-quadruple-large border-radius-8px overflow-hidden position-relative" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
                             <div class="row row-cols-1 row-cols-sm-2 justify-content-center m-0">
                                 <div class="col p-20 lg-p-15 text-center border-bottom border-end xs-border-end-0 border-color-extra-medium-gray bg-white text-center last-paragraph-no-margin">
-                                    <i class="bi bi-person-check text-gradient-emerald-blue-emerald-green mb-10px" style="font-size: 2rem;"></i>
-                                    <p class="fs-15 fw-600 text-dark-gray m-0">Ingenieros especialistas</p>
+                                    <i class="bi bi-person-check text-gradient-emerald-blue-emerald-green" style="font-size: 2rem; display: block; margin-bottom: 8px;"></i>
+                                    <p class="fs-15 fw-600 text-dark-gray m-0" style="line-height: 1.2; word-wrap: break-word;">Ingenieros especialistas</p>
                                 </div>
                                 <div class="col p-20 lg-p-15 text-center border-bottom border-color-extra-medium-gray bg-white text-center last-paragraph-no-margin">
-                                    <i class="bi bi-lightning-fill text-gradient-emerald-blue-emerald-green mb-10px" style="font-size: 2rem;"></i>
-                                    <p class="fs-15 fw-600 text-dark-gray m-0">Respuesta rapida</p>
+                                    <i class="bi bi-lightning-fill text-gradient-emerald-blue-emerald-green" style="font-size: 2rem; display: block; margin-bottom: 8px;"></i>
+                                    <p class="fs-15 fw-600 text-dark-gray m-0" style="line-height: 1.2; word-wrap: break-word;">Respuesta rapida</p>
                                 </div>
                                 <div class="col p-20 lg-p-15 text-center border-end xs-border-end-0 xs-border-bottom border-color-extra-medium-gray bg-white text-center last-paragraph-no-margin">
-                                    <i class="bi bi-tools text-gradient-emerald-blue-emerald-green mb-10px" style="font-size: 2rem;"></i>
-                                    <p class="fs-15 fw-600 text-dark-gray m-0">Equipo especializado</p>
+                                    <i class="bi bi-tools text-gradient-emerald-blue-emerald-green" style="font-size: 2rem; display: block; margin-bottom: 8px;"></i>
+                                    <p class="fs-15 fw-600 text-dark-gray m-0" style="line-height: 1.2; word-wrap: break-word;">Equipo especializado</p>
                                 </div>
                                 <div class="col p-20 lg-p-15 text-center bg-white text-center last-paragraph-no-margin">
-                                    <i class="bi bi-check-circle text-gradient-emerald-blue-emerald-green mb-10px" style="font-size: 2rem;"></i>
-                                    <p class="fs-15 fw-600 text-dark-gray m-0">+600 proyectos</p>
+                                    <i class="bi bi-check-circle text-gradient-emerald-blue-emerald-green" style="font-size: 2rem; display: block; margin-bottom: 8px;"></i>
+                                    <p class="fs-15 fw-600 text-dark-gray m-0" style="line-height: 1.2; word-wrap: break-word;">+600 proyectos</p>
                                 </div>
                             </div>
+                            <!-- Flecha SVG que conecta con servicios -->
+                            <svg class="position-absolute" style="right: -45px; top: 50%; transform: translateY(-50%); width: 50px; height: 30px; display: none; pointer-events: none;" viewBox="0 0 50 30">
+                                <path d="M 0 15 Q 15 5, 35 15" stroke="#ff0000" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <polygon points="35,15 40,12 38,15 40,18" fill="#ff0000"/>
+                            </svg>
                         </div>
                     </div>
                     <div class="col-xl-5 offset-xl-1 col-lg-6 text-center text-lg-start" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay":200, "staggervalue": 200, "easing": "easeOutQuad" }'>
